@@ -4,6 +4,7 @@
 
 const content = require('./static_content');
 const fs = require('fs');
+const sys = require('util');
 const path = require('path');
 const debug = require('debug')('avrodoc:avrodoc');
 /**
@@ -62,7 +63,7 @@ function readJSON(filename) {
     try {
         parsed = JSON.parse(json);
     } catch (e) {
-        sys.error('Not a valid json file: ' + filename);
+        sys.log('Not a valid json file: ' + filename);
         process.exit(1);
     }
     return parsed;
