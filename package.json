@@ -4,6 +4,10 @@
   "version": "0.4.0",
   "author": "Julio de Leon https://github.com/JulioDeLeon",
   "bin": "./bin/avrodoc-plus",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/JulioDeLeon/avrodoc-plus"
+  },
   "scripts": {
     "start": "node src/cli",
     "server": "node app",
@@ -26,7 +30,7 @@
     "wd": "0.0.32"
   },
   "engines": {
-    "node": ">=10.10.x"
+    "node": ">=13.8.x"
   },
   "license": "Apache-2.0"
 }
